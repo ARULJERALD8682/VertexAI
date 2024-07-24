@@ -1,0 +1,72 @@
+openapi: 3.0.0
+info:
+  title: Flight Search API
+  version: 1.0.0
+paths:
+  /flights_data:
+    post:
+      summary: Search for flights
+      operationId: searchFlights
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                departure_id:
+                  type: string
+                  example: "MAA"
+                arrival_id:
+                  type: string
+                  example: "AUS"
+                type:
+                  type: string
+                  example: "2"
+                adults:
+                  type: string
+                  example: "2"
+                children:
+                  type: string
+                  example: "1"
+                return_date:
+                  type: string
+                  example: ""
+                outbound_date:
+                  type: string
+                  example: "2024-07-29"
+      responses:
+        '200':
+          description: Flight search results
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: array
+                  items:
+                    anyOf:
+                      - type: object
+                        properties:
+                          Departure_Airport_Name:
+                            type: string
+                          Departure_time:
+                            type: string
+                          Arrival_Airport_Name:
+                            type: string
+                          Arrival_time:
+                            type: string
+                      - type: object
+                        properties:
+                          layover_time:
+                            type: integer
+                          layover_airport_name:
+                            type: string
+                      - type: object
+                        properties:
+                          Total_duration:
+                            type: integer
+                      - type: object
+                        properties:
+                          Total_price:
+                            type: number

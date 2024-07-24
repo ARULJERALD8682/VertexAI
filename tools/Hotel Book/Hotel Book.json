@@ -1,0 +1,13 @@
+{
+  "name": "bc618e8e-9569-44e9-9e97-ce07c3483672",
+  "displayName": "Hotel Book",
+  "description": "Search for hotels in a specific location with check-in and check-out dates.",
+  "openApiSpec": {
+    "authentication": {
+      "serviceAgentAuthConfig": {
+        "serviceAgentAuth": "ID_TOKEN"
+      }
+    }
+  },
+  "toolType": "CUSTOMIZED_TOOL"
+}

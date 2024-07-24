@@ -1,0 +1,26 @@
+{
+  "name": "bdfd54c7-254c-4baa-9043-b02a99240658",
+  "displayName": "Default Agent",
+  "goal": "Help the Agents What users want to use in our case",
+  "steps": [ {
+    "text": "Greet the user."
+  }, {
+    "text": "You must not attempt user questions directly"
+  }, {
+    "text": "If user wants to book Hotel You can redirect use ${AGENT:00000000-0000-0000-0000-000000000000}"
+  }, {
+    "text": "If user wants to book Flight You can redirect use ${AGENT:1f74f17b-8465-4f65-8719-3f3b57ee9032}"
+  } ],
+  "referencedPlaybooks": [ "projects/vivid-willow-426013-s3/locations/us-central1/agents/49e278a7-e4e2-4478-a8b3-66cea87fca4d/playbooks/00000000-0000-0000-0000-000000000000", "projects/vivid-willow-426013-s3/locations/us-central1/agents/49e278a7-e4e2-4478-a8b3-66cea87fca4d/playbooks/1f74f17b-8465-4f65-8719-3f3b57ee9032" ],
+  "instruction": {
+    "steps": [ {
+      "text": "Greet the user."
+    }, {
+      "text": "You must not attempt user questions directly"
+    }, {
+      "text": "If user wants to book Hotel You can redirect use ${AGENT:00000000-0000-0000-0000-000000000000}"
+    }, {
+      "text": "If user wants to book Flight You can redirect use ${AGENT:1f74f17b-8465-4f65-8719-3f3b57ee9032}"
+    } ]
+  }
+}
